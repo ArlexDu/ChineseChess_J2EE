@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+	#background{							/* 背景的设置 */
+	    height: 100%;
+		width: 100%;
+		z-index: 0;
+	}
+	/* 表单外面的区域的设置 */
+	#button{ 								/*登陆和注册按钮的设置  */
+	    top:65%;
+	    left:40%;                          /*为了保证按钮的位置在中心所以计算总的宽度减去按钮的宽度除以2就是他的横坐标  */
+	    height:30%;
+	    width:30%;
+	    position: absolute;					/*相对于父物体的位置  */
+	    z-index: 1;							/*值越大越在上面 */
+	}
+	/* 错误的提示 */
+	#error1{
+	 color: red;
+	 visibility: visible;
+	}
+	#error2{
+	 color: red;
+	 visibility: visible;
+	}
+	#click{
+	width: 60%;
+	height:30px;
+	text-align: center;
+	}
+	#login_btn{
+	border:none;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background:url(../picture/denglu_small.png);
+	height: 35px;
+	width: 73px;
+	left:40px;
+	position: absolute;
+	}
+	#register_btn{
+	border:none;
+	left:130px;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-image:url(../picture/zhuce_small.png);
+	height: 35px;
+	width: 73px;
+	position: absolute;
+	}
